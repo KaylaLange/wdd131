@@ -15,24 +15,22 @@
 }
 
 main {
-    width: 80%;
     display: flex;
-    margin: 0 auto;
     justify-content: center;
 }
 
 header {
     background-color: var(--primary-color);
-    gap: 1rem;
     align-items: center;
     /* box-shadow: 0 0 30px #333; */
 }
+
 h1 {
     font-family: var(--heading-font);
     color: var(--accent2-color);
     font-size: 1.5rem;
     text-align: left;
-    padding: 1rem;
+    padding: 1rem 0 0 1rem;
 }
 
 #menu {
@@ -102,18 +100,18 @@ h2 {
     justify-content: center;
     font-family: var(--heading-font);
     color: var(--primary-color);
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
-
-/* .content-wrapper {
-    padding: 0;
-} */
 
 .image-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
+    /* grid-template-columns: 1fr; */
+    /* place-items: center; */
     padding-bottom: 2rem;
+}
+
+.image-grid img {
+    height: 55vw;
 }
 
 figcaption {
