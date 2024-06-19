@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+:root {
+    --primary-color: #485752;
+    --secondary-color: #809990;
+    --accent1-color: #181B1A;
+    --accent2-color: #FFFFFF;
+
+    --heading-font: 'Roboto Serif', serif;
+    --paragraph-font: 'Inter', sans-serif;
+
+    --nav-background-color: #D7DBD9;
+    --nav-link-color: #181B1A;
+    --nav-hover-link-color: #AD8598;
+}
+
+main {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+header {
+    background-color: var(--primary-color);
+    gap: 1rem;
+    align-items: center;
+    /* box-shadow: 0 0 30px #333; */
+}
+h1 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 1rem;
+}
+
+#menu {
+	display: block;
+	font-size: 2rem;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	color: var(--accent2-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: var(--accent2-color);
+    text-align: center;
+    padding: .75rem;
+    font-family: var(--paragraph-font);
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navigation a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+    font-family: var(--paragraph-font);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+.navigation.show + h1, h1.show {
+    display: none;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    padding-top: 2rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    padding-bottom: 2rem;
+}
+
+figcaption {
+    font-family: var(--paragraph-font);
+    color: var(--nav-link-color);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: .1rem;
+}
+
+footer p {
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
