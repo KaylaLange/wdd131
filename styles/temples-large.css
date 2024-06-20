@@ -21,6 +21,7 @@
     h1 {
         text-align: left;
         padding: 0 0 0 1rem;
+        margin: 0;
     }
 
     #menu {
@@ -30,23 +31,41 @@
     .navigation { 
         display: flex;
         flex-direction: row;
-        padding-right: 2rem;
+        padding: .5rem 2rem .5rem 0;
+        margin: 0;
     }
 
     .navigation li {
         display: flex;
-        flex: 0 0 auto;
+    }
+
+    main {
+        padding: 0;
+        gap: 0;
+        margin: 0;
+    }
+
+    h2 {
+        padding: 3rem 0 1.5rem 0;
+        margin: 0;
     }
 
     .image-grid {
-        /* gap: 5px; */
-        /* display: grid; */
         grid-template-columns: 1fr 1fr 1fr;
     } 
 
+    .image-grid figure {
+        margin: 0;
+        padding-bottom: .75rem;
+    }
+
     .image-grid img {
-        /* max-height: 500x; */
         height: 15vw;
+        padding: 0 .5rem 0 .5rem;
+    }
+
+    footer {
+        margin-top: 2rem;
     }
 
 }

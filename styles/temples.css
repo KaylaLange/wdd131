@@ -14,11 +14,6 @@
     --nav-hover-link-color: #AD8598;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-}
-
 header {
     background-color: var(--primary-color);
     align-items: center;
@@ -31,13 +26,14 @@ h1 {
     font-size: 1.5rem;
     text-align: left;
     padding: 1rem 0 0 1rem;
+    margin: 0 0 1rem 0
 }
 
 #menu {
 	display: block;
-	font-size: 2rem;
+	font-size: 3rem;
 	text-decoration: none;
-	padding: .5rem 1rem;
+	padding: 0 1.5rem 0 0;
 	color: var(--accent2-color);
     position: absolute;
     top: 0;
@@ -52,6 +48,7 @@ h1 {
     display: flex;
     flex-direction: column;
     list-style: none;
+    
 }
 
 .navigation li {
@@ -76,6 +73,7 @@ h1 {
 .show {
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 .show li {
@@ -85,14 +83,26 @@ h1 {
 #menu.show::before {
 	content: "X";
     font-family: var(--paragraph-font);
+    font-size: 2rem;
+    padding: 1.2rem 1.5rem;
     position: absolute;
     top: 0;
     right: 0;
-    padding: 1rem;
 }
 
 .navigation.show + h1, h1.show {
     display: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.content.wrapper {
+    padding: 0;
+    gap: 0;
 }
 
 h2 {
@@ -100,14 +110,14 @@ h2 {
     justify-content: center;
     font-family: var(--heading-font);
     color: var(--primary-color);
-    /* padding-top: 2rem; */
+    padding: 3rem 0 .5rem 0;
+    margin: 0;
 }
 
 .image-grid {
     display: grid;
-    /* grid-template-columns: 1fr; */
-    /* place-items: center; */
-    padding-bottom: 2rem;
+    padding: 0 0 2rem 0;
+    gap: 0;
 }
 
 .image-grid img {
