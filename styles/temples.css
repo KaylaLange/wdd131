@@ -30,25 +30,29 @@ h1 {
 }
 
 #menu {
-	display: block;
-	font-size: 3rem;
-	text-decoration: none;
-	padding: 0 1.5rem 0 0;
-	color: var(--accent2-color);
+    display: block;
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 0 1.5rem 0 0;
+    color: var(--accent2-color);
     position: absolute;
     top: 0;
     right: 0;
 }
 
 #menu::before {
-	content: "≡";
+    content: "≡";
+}
+
+#menu:hover {
+    color: var(--nav-hover-link-color);
 }
 
 .navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
-    
+
 }
 
 .navigation li {
@@ -63,7 +67,7 @@ h1 {
     padding: .75rem;
     font-family: var(--paragraph-font);
     font-weight: 600;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 .navigation a:hover {
@@ -77,11 +81,11 @@ h1 {
 }
 
 .show li {
-	display: block;
+    display: block;
 }
 
 #menu.show::before {
-	content: "X";
+    content: "X";
     font-family: var(--paragraph-font);
     font-size: 2rem;
     padding: 1.2rem 1.5rem;
@@ -90,7 +94,8 @@ h1 {
     right: 0;
 }
 
-.navigation.show + h1, h1.show {
+.navigation.show+h1,
+h1.show {
     display: none;
 }
 
