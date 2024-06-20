@@ -1,17 +1,3 @@
-:root {
-    --primary-color: #485752;
-    --secondary-color: #809990;
-    --accent1-color: #181B1A;
-    --accent2-color: #FFFFFF;
-
-    --heading-font: 'Roboto Serif', serif;
-    --paragraph-font: 'Inter', sans-serif;
-
-    --nav-background-color: #D7DBD9;
-    --nav-link-color: #181B1A;
-    --nav-hover-link-color: #AD8598;
-}
-
 @media (min-width: 740px) {
     header {
         display: flex;

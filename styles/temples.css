@@ -12,6 +12,7 @@
     --nav-background-color: #D7DBD9;
     --nav-link-color: #181B1A;
     --nav-hover-link-color: #AD8598;
+    --nav-2-hover-link-color: #c2a3b2;
 }
 
 header {
@@ -45,7 +46,7 @@ h1 {
 }
 
 #menu:hover {
-    color: var(--nav-hover-link-color);
+    color: var(--nav-2-hover-link-color);
 }
 
 .navigation {
@@ -71,7 +72,7 @@ h1 {
 }
 
 .navigation a:hover {
-    color: var(--nav-hover-link-color);
+    color: var(--nav-2-hover-link-color);
 }
 
 .show {
