@@ -83,7 +83,7 @@
         z-index: 1;
     }
 
-    .weather-icon::before {
+    .weather-icon::after {
         content: " ";
         position: absolute;
         top: 0.5rem;
