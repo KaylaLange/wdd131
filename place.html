@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Kayla Lange</title><meta name="description" content="WDD 131 - Dynamic Web Fundamentals Kayla Lange Country Page">
+    <meta name="author" content="Kayla Lange">
+
+    <link rel="stylesheet" href="styles/place.css" >
+    <link rel="stylesheet" href="styles/place-large.css" >
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Greece</h1>
+    </header>
+    <span class="color-block"></span>
+    <div class="hero-container">
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 740px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-small-copy.webp">
+                <img src="images/hero-small.webp" alt="Greece Landscape">
+            </picture>
+        </div>
+        <!-- <div class="data"> -->
+        <div class="data-container">
+            <div id="data-h2">
+                <h2>Data</h2>
+            </div>
+            <div class="data">
+                <div class="data-pair">
+                    <span class="label">Area:</span>
+                    <span>131,957 sq km</span>
+                </div>
+                <div class="data-pair">
+                    <span class="label">Population:</span>
+                    <span>10.32 million</span>
+                </div>
+                <div class="data-pair">
+                    <span class="label">Capital:</span>
+                    <span>Athens</span>
+                </div>
+                <div class="data-pair">
+                    <span class="label">Languages:</span>
+                    <span>Greek</span>
+                </div>
+                <div class="data-pair">
+                    <span class="label">Currency:</span>
+                    <span>euro</span>
+                </div>
+                <div class="data-pair">
+                    <span class="label">Time Zone:</span>
+                    <span>UTC+3 EEST</span>
+                </div>
+                <div class="data-pair">
+                    <span class="label">Calling Code:</span>
+                    <span>+30</span>
+                </div>
+                <div class="data-pair">
+                    <span class="label">Internet TLD:</span>
+                    <span>.gr</span>
+                </div>
+            </div>
+        </div>
+        <div class="weather">
+            <h2 id="weather-h2">Weather</h2>
+            <div class="weather-icon">
+                <picture>
+                    <source media="(min-width: 740px)" srcset="images/sunny-large.png">
+                    <source media="(min-width: 500px)" srcset="images/sunny-small.svg">
+                    <img src="images/sunny-small.svg" alt="Sun">
+                </picture>
+            </div>
+            <div class="data-pair">
+                <span class="label">Temperature:</span>
+                <span id="temperature">37°C</span>
+            </div>
+            <div class="data-pair">
+                <span class="label">Conditions:</span>
+                <span>Sunny</span>
+            </div>
+            <div class="data-pair">
+                <span class="label">Wind:</span>
+                <span id="windSpeed">32 km/h</span>
+            </div>
+            <div class="data-pair">
+                <span class="label">Wind Chill:</span>
+                <span id="windChill"></span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>©<span id="currentyear"></span> | Kayla Lange | Colorado</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

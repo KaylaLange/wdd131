@@ -1,0 +1,120 @@
+:root {
+    /* --primary-color: #0678BF; */
+    /* --primary-color: #044d68; */
+    --secondary-color: #07C7F2;
+    --accent1-color: #181B1A;
+    --accent2-color: #FFFFFF;
+
+    --heading-font: 'Roboto Serif', serif;
+    --paragraph-font: 'Inter', sans-serif;
+
+    --nav-background-color: #0678BF;
+    --nav-link-color: #181B1A;
+    --nav-hover-link-color: #BFA521;
+}
+
+@media (min-width: 740px) {
+    * {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75px;
+    }
+
+    h2 {
+        display: block;
+    }
+
+    .hero-container {
+        position: relative;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(740px, 1fr) );
+        background-color: var(--primary-color);
+    }
+
+    .data-container {
+        max-width: 100px;
+        height: 100%;
+        position: absolute;
+        top: 5%;
+        left: 2%;
+    }
+
+    #data-h2 {
+        position: absolute;
+        z-index: 1;
+        top: 2%;
+        left: -9%;
+        padding: .75rem 0 .75rem .75rem;
+        background-color: var(--nav-hover-link-color);
+        width: 190px;
+        text-align: left;
+    }
+
+    h2 {
+        color: white;
+    }
+
+    .data {
+        position: absolute;
+        font-size: .75em;
+        background-color: rgba(255, 255, 255, 0.75);
+        width: 225px;
+        padding-top: 5rem;
+    }
+
+    .weather {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.75);
+        bottom: 5%;
+        right: 2%;
+        width: 185px;
+        height: 160px;
+        padding: .75rem .75rem .75rem .75rem;
+        z-index: 1;
+    }
+
+    .weather-icon::before {
+        content: " ";
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        width: 2rem;
+        height: 2rem;
+      }
+
+    .weather .data-pair  {
+        font-size: .75rem;
+    }
+
+    #weather-h2 {
+        background-color: rgba(191, 165, 33, 0.75);
+        padding: .75rem 0 .75rem .5rem;
+        position: absolute;
+        right: 18%;
+        top: 5%;
+        width: 170px;
+    }
+
+    .weather-icon {
+        position: relative;
+        margin-bottom: 15px;
+        margin-right: 35px;
+        z-index: 2;
+    }
+
+    footer {
+        margin: 0;
+        padding: 2rem;
+    }
+
+}
