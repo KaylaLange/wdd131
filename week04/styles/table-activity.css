@@ -1,0 +1,80 @@
+:root {
+    --fill-color: #6ABCB8;
+    --border: rgba(106, 187, 184);
+    --table-cell: rgba(106, 187, 184, .65);
+
+    --body-font-color: #262323;
+    --heading-font: white;
+    --zebra: rgba(106, 187, 184, .25);
+}
+
+body {
+  padding: 2rem;
+}
+
+table {
+    border: thin solid var(--border);
+    border-collapse: collapse;
+    width: 400px;
+}
+
+.blank {
+    border: none;
+}
+
+th {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+th, td {
+    border: thin solid var(--border);
+    padding: .75rem;
+    text-align: center;
+}
+
+caption {
+    caption-side: bottom;
+    padding: .5rem;
+    font-size: .85rem;
+}
+
+.blank {
+    background-color: var(--border);
+}
+
+th[scope="colgroup"] {
+    background-color: var(--border);
+    color: white;
+}
+
+th[scope="col"] {
+    background-color: var(--table-cell);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
+
+/* caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--body-font-color);
+    font-size: .85rem;
+  }
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--border);
+}
+
+.blank {
+    border: none;
+} */
