@@ -108,7 +108,7 @@ const temples = [
         alt: "Laie Hawaii Temple"
       }
   ]
-
+  
 createTempleCard(temples);
 
 const homeLink = document.querySelector("#home");
@@ -153,6 +153,7 @@ function createTempleCard(filteredTemples) {
     area.innerHTML = `<span class="label">Size:</span> ${temple.area}`;
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.name} Temple`);
+    img.style.aspectRatio = "5 / 3";
     img.setAttribute("loading", "lazy");
 
     card.appendChild(templeName);
@@ -164,3 +165,6 @@ function createTempleCard(filteredTemples) {
     document.querySelector(".temple-card").appendChild(card);
   });
   }
+
+  
+
