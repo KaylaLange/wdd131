@@ -1,0 +1,162 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    font-size: 1em;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.review_form {
+    /* margin: 2rem 0; */
+    margin: 0 auto;
+    border: none;
+    width: 100%;
+    max-width: 410px;
+    background-color: #CAC5D3;
+    border-radius: 3px;
+    padding-top: 0;
+    padding: 0 .8rem .8rem .8rem;
+}
+
+.review_form fieldset {
+    border: none;
+    /* padding: 0 .8rem .8rem .8rem; */
+}
+
+#form_title {
+    margin: 0 auto;
+    color: white;
+    background-color: #302C49;
+    border-radius: 3px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 410px;
+    margin-bottom: .75rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+label, legend {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: .9rem;
+    padding-bottom: 2px;
+}
+
+.stars {
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+#rating_head {
+    margin: 2.5%;
+    margin-bottom: 0;
+}
+
+.radio_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding-top: 0;
+    margin: 0; */
+}
+
+.radio_btn label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+    padding-top: .5rem;
+}
+
+.radio_btn input[type="radio"] {
+    display: flex;
+    flex-direction: row;
+    transform: scale(1.5);
+}
+
+.rating .radio_pair label {
+    margin-right: 10px;
+}
+
+.review_form input[type="text"],
+.review_form input[type="date"],
+.review_form select {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 3px;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+.review_form input[type="date"] {
+    padding-left: .5rem;
+}
+
+.features {
+    padding-bottom: 0;
+}
+
+.features input[type="checkbox"] {
+    margin-right: 6px;
+    transform: scale(1.5);
+}
+
+.features label {
+    margin: 0;
+    padding: 5px;
+}
+
+.review_form textarea {
+    width: 100%;
+    max-width: 400px;
+    height: 100px;
+}
+
+.check_all {
+    font-style: italic;
+}
+
+.optional {
+    font-size: .75rem;
+    color: darkblue;
+}
+
+.review_form input[type="submit"] {
+    border: none;
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: lightgrey;
+    border: .2px solid black;
+    border-radius: 3px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px #999;
+    appearance: none;
+    margin-top: .5rem;
+}
+
+footer {
+    margin: 0 auto;
+    color: white;
+    background-color: #302C49;
+    border-radius: 3px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 410px;
+    margin-top: .75rem;
+    text-align: center;
+}

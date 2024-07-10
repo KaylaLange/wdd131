@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Product Review Form | Kayla Lange</title><meta name="description" content="WDD 131 - Dynamic Web Fundamentals Kayla Lange Product Review Form">
+    <meta name="author" content="Kayla Lange">
+
+    <link rel="stylesheet" href="styles/form.css" >
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <main>
+        <h2 id="form_title">Product Review</h2>
+        <form method="get" action="review.html" class="review_form">
+            <fieldset>
+                <!-- <div> -->
+                <label>Product Name
+                    <select id="productSelect" name="product" required>
+                        <option value="" disabled selected>Select a Product...</option>
+                        <option value=""></option>
+                    </select>
+                    </label>
+                <!-- </div> -->
+            </fieldset>
+            
+            <fieldset class="stars">
+                <legend id="rating_head">Overall Rating</legend>
+                <div class="radio_btn">
+                    <label for="1star"><span>☆</span><input type="radio" id="1star" name="rating" value="☆" required></label>
+                    <label for="2star"><span>☆☆</span><input type="radio" id="2star" name="rating" value="☆☆" required></label>
+                    <label for="3star"><span>☆☆☆</span><input type="radio" id="3star" name="rating" value="☆☆☆" required></label>
+                    <label for="4star"><span>☆☆☆☆</span><input type="radio" id="4star" name="rating" value="☆☆☆☆" required></label>
+                    <label for="5star"><span>☆☆☆☆☆</span><input type="radio" id="5star" name="rating" value="☆☆☆☆☆" required></label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <!-- <div> -->
+                <label for="date_install">Date of Installation</label>
+                <input type="date" id="date_install" name="date" required>
+                <!-- </div> -->
+            </fieldset>
+            
+            <fieldset class="features">
+                <legend>Which features did you find useful in the product?<br><span class="check_all">(check all that apply)</legend>
+                <label><input type="checkbox" id="durability" name="features" value="durability">Durability</label>
+                <label><input type="checkbox" id="ease" name="features" value="eas of use">Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="features" value="performance">Performance</label>
+                <label><input type="checkbox" id="design" name="features" value="design">Design</label>
+            </fieldset>
+
+            <fieldset>
+                <!-- <div> -->
+                <label for="review">Written Review <span class="optional">(Optional)</span></label>
+                <textarea id="review" name="review"></textarea>
+                <!-- </div> -->
+            </fieldset>
+
+            <fieldset>
+                <!-- <div> -->
+                <label for="name">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="name" name="username">
+                <!-- </div> -->
+            </fieldset>
+
+            <fieldset>
+                <!-- <div> -->
+                <input type="submit" value="Post Review">
+                <!-- </div> -->
+            </fieldset>
+            
+        </form>
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Kayla Lange | Colorado</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
