@@ -12,17 +12,15 @@
 </head>
 <body>
     <main>
-        <h2 id="form_title">Product Review</h2>
+        <h1 id="form_title">Product Review</h1>
         <form method="get" action="review.html" class="review_form">
             <fieldset>
-                <!-- <div> -->
                 <label>Product Name
                     <select id="productSelect" name="product" required>
                         <option value="" disabled selected>Select a Product...</option>
-                        <option value=""></option>
+                        <option value="product"></option>
                     </select>
                     </label>
-                <!-- </div> -->
             </fieldset>
             
             <fieldset class="stars">
@@ -37,14 +35,12 @@
             </fieldset>
 
             <fieldset>
-                <!-- <div> -->
                 <label for="date_install">Date of Installation</label>
                 <input type="date" id="date_install" name="date" required>
-                <!-- </div> -->
             </fieldset>
             
             <fieldset class="features">
-                <legend>Which features did you find useful in the product?<br><span class="check_all">(check all that apply)</legend>
+                <legend>Which features did you find useful in the product?<br><span class="check_all">(check all that apply)</span></legend>
                 <label><input type="checkbox" id="durability" name="features" value="durability">Durability</label>
                 <label><input type="checkbox" id="ease" name="features" value="eas of use">Ease of Use</label>
                 <label><input type="checkbox" id="performance" name="features" value="performance">Performance</label>
@@ -52,23 +48,17 @@
             </fieldset>
 
             <fieldset>
-                <!-- <div> -->
                 <label for="review">Written Review <span class="optional">(Optional)</span></label>
                 <textarea id="review" name="review"></textarea>
-                <!-- </div> -->
             </fieldset>
 
             <fieldset>
-                <!-- <div> -->
                 <label for="name">Your Name <span class="optional">(Optional)</span></label>
                 <input type="text" id="name" name="username">
-                <!-- </div> -->
             </fieldset>
 
             <fieldset>
-                <!-- <div> -->
                 <input type="submit" value="Post Review">
-                <!-- </div> -->
             </fieldset>
             
         </form>
