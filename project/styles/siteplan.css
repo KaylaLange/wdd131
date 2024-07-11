@@ -1,0 +1,78 @@
+body {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: Ador Hairline;
+}
+
+h2, p, ul {
+    font-family: Inter, sans-serif;
+}
+
+.sitename, .scenarios, .typography {
+    border: 1px dashed black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: black;
+    color: #F2A74B;
+    border-radius: 3px;
+}
+
+.sitepurpose, .colorschema, .wireframe {
+    border: 1px dashed black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+#h1 {
+    color: #F2A74B;
+}
+
+#accent1 {
+    color: #014029;
+    font-weight: 600;
+}
+
+#accent2 {
+    color: #F2884B;
+    font-weight: 600;
+}
+
+.wireframe_div {
+    text-align: center;
+}
+
+#wireframe1, #wireframe2 {
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.desk_wireframe {
+    width: 100%;
+    max-width: 600px;
+}
+
+.mobile_wireframe {
+    width: 100%;
+    max-width: 300px;
+}
+
+footer {
+    color: white;
+    background-color: #014029;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: .5rem 0 .5rem 0;
+    text-align: center;
+    border-radius: 3px;
+}
