@@ -33,13 +33,24 @@ products.forEach((product) => {
     option.value = product.id;
     option.textContent = product.name;
     productSelect.appendChild(option);
-})
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    let reviewCounter = parseInt(localStorage.getItem("reviewCounter")) || 0;
-
-    const form = document.querySelector(".review_form");
 });
 
 
+// // 1️⃣ Initialize display element variable
+// const reviewsDisplay = document.querySelector(".reviewCounter");
+
+// // 2️⃣ Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
+// let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
+
+// // 3️⃣ Determine if this is the first visit or display the number of visits. We wrote this example backwards in order for you to think deeply about the logic.
+// if (numReviews !== 0) {
+// 	reviewsDisplay.textContent = numReviews;
+// } 
+
+// // 4️⃣ increment the number of visits by one.
+// numReviews++;
+
+// // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
+// localStorage.setItem("numReviews-ls", numReviews);
+
+// // 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.

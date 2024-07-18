@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title><meta name="description" content="WDD 131 - Dynamic Web Fundamentals Kayla Lange Final Project Home Page">
+    <meta name="author" content="Kayla Lange">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/beyond_the_bite.js" defer></script>
+
+    <link rel="stylesheet" href="styles/beyond_the_bite.css">
+    <link rel="stylesheet" href="styles/beyond_the_bite_large.css">
+
+    <link rel="preconnect" href="https://use.typekit.net/cje2kso.css">
+</head>
+<body>
+    <header>
+        <h1>Beyond the Bite</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="home">home</a></li>
+                <li><a href="experiences.html" id="experiences">experiences</a></li>
+                <li><a href="about_us.html" id="about_us">about us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero_section">
+        <h1>Eat<br> <span class="light">like a local,</span> <br>Explore<br><span class="light"> like it's an </span> <br>Adventure</h1>
+            <picture>
+                <source media="(min-width: 860px)" srcset="images/heroImg_large_copy.jpg">
+                <source media="(min-width: 740px)" srcset="images/heroImg_medium.webp">
+                <source media="(min-width: 500px)" srcset="images/heroImg_small_copy.webp">
+                <img src="images/heroImg_small.webp" alt="Aerial View of People Eating">
+            </picture>
+        </div>
+        <h2>Two Thumbs Up (and maybe a fork): Foodie Raves</h2>
+        <div id="testimonial_carousel" class="carousel">
+            <div class="carousel_item active">
+                <p class="testimonial_text">"Content 1"</p>
+                <img src="images/alyssa_moore_copy.webp" alt="profile pic Alyssa Moore">
+                <div class="testimonial_info">
+                    <span class="testimonial_name">Name 1</span> - 
+                    <span class="testimonial_home">Home 1</span>
+                </div>
+            </div>
+            <div class="carousel_item">
+                <p class="testimonial_text">"Content 2"</p>
+                <img src="images/sage_conner.webp" alt="profile pic Sage Conner">
+                <div class="testimonial_info">
+                    <span class="testimonial_name">Name 2</span> - 
+                    <span class="testimonial_home">Home 2</span>
+                </div>
+            </div>
+            <div class="carousel_item">
+                <p class="testimonial_text">"Content 3"</p>
+                <img src="images/florence_walker.webp" alt="profile pic Florence Walker">
+                <div class="testimonial_info">
+                    <span class="testimonial_name">Name 3</span> - 
+                    <span class="testimonial_home">Home 3</span>
+                </div>
+            </div>
+            <div class="carousel_item">
+                <p class="testimonial_text">"Content 4"</p>
+                <img src="images/duncan_miller.webp" alt="profile pic Duncan Miller">
+                <div class="testimonial_info">
+                    <span class="testimonial_name">Name 4</span> - 
+                    <span class="testimonial_home">Home 4</span>
+                </div>
+            </div>
+            <div class="carousel_item">
+                <p class="testimonial_text">"Content 5"</p>
+                <img src="images/sophia_rodriguez.webp" alt="profile pic Sophia Rodriquez">
+                <div class="testimonial_info">
+                    <span class="testimonial_name">Name 5</span> - 
+                    <span class="testimonial_home">Home 5</span>
+                </div>
+            </div>
+            <a class="carousel_control_prev" role="button">
+                <span class="carousel_control_prev_icon" aria-hidden="true"></span>
+                <span class="sr-only">◀︎</span>
+            </a>
+            <a class="carousel_control_next" role="button">
+                <span class="carousel_control_next_icon" aria-hidden="true"></span>
+                <span class="sr-only">►</span>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Beyond the Bite | Kayla Lange</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
