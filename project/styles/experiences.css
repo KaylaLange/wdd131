@@ -2,7 +2,7 @@
     --primary-color: #000000;
     --secondary-color: #FFFFFF;
     --accent1-color: #F2A74B;
-    --accent2-color: #F2994B;
+    --accent2-color: #014029;
 
     --nav-hover-link-color: #BD571C;
 
@@ -30,7 +30,6 @@ header h1 {
     font-family: var(--heading-font);
     font-size: 1.25rem;
     padding: 0;
-    margin: 0;
 }
 
 #menu {
@@ -51,16 +50,6 @@ header h1 {
 #menu:hover {
     color: var(--nav-hover-link-color);
 }
-
-/* added for scrolling effect */
-/* nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 3;
-} */
-/*  */
 
 .navigation {
     display: flex;
@@ -116,6 +105,8 @@ header h1 {
 h1.show {
     display: none;
 }
+
+
 /* Image styling */
 body {
     font-family: 'Inter', sans-serif;
@@ -139,8 +130,6 @@ h2 {
 .main_image {
     margin-bottom: 0;
     text-align: center;
-    /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); */
-    /* width: 100%; */
 }
 
 #largeImage {
@@ -148,13 +137,27 @@ h2 {
 }
 
 #largeDescription {
-    text-align: center;
+    text-align: left;
     max-width: 550px;
     margin-top: 10px;
-    margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
 }
+
+#bookNow {
+    display: flex;
+    text-decoration: none;
+    color: var(--nav-hover-link-color);
+    font-weight: 600;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+#bookNow:hover {
+    font-size: 1.5rem;
+}
+
 
 .image_grid {
     display: grid;
@@ -175,7 +178,6 @@ h2 {
     width: 100%;
     height: 100px;
     object-fit: cover;
-    /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); */
 }
 
 .grid_item p {
@@ -192,47 +194,6 @@ h2 {
 
 
 
-/* Scrolling effect styling */
-/* .top_section {
-    position: fixed;
-    top: 10;
-    left: 0;
-    right: 0; */
-    /* width: 100%; */
-    /* height: 700px; adjust as needed */
-    /* z-index: 2; */
-    /* scroll-margin-top: 5rem;  */ /*optinal and adjust as needed */
-/* } */
-
-/* .bottom_section { */
-    /* scroll-snap-type: y mandatory; */
-    /* overflow-y: scroll; */
-    /* position: relative;
-    padding-top: 800px;
-    padding-bottom: 800px;
-    overflow: hidden;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    background-color: var(--accent1-color);
-} */
-
-/* .cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0);
-    transition: opacity 1s ease-in-out;
-} */
-
-/* .bottom_section:hover  
-.bottom_section:focus {
-    opacity: 0.8;
-} */
-
-
-
 /* form styling */
 .newsletter {
     margin: 0 auto;
@@ -242,10 +203,6 @@ h2 {
     background-color: white;
     border-radius: 2px;
     padding-top: 0;
-    /* background-image: url('images/broken_plate.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8; */
    }
 
 .newsletter fieldset {
@@ -284,11 +241,9 @@ label {
 
 .newsletter input[type="submit"] {
     border: none;
-    color: black;
     font-weight: 700;
     font-size: 1rem;
     background-color: lightgrey;
-    border: .2px solid black;
     border-radius: 3px;
     padding: .8rem;
     width: 100%;
@@ -300,7 +255,7 @@ label {
 
 .bottom_section {
     margin-top: 3rem;
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     padding: 5rem;
 }
 
@@ -311,7 +266,6 @@ footer {
     background-color: var(--primary-color);
     color: #ffffff;
     padding: .5rem;
-    /* margin-top: 55px; */
 }
 
 footer p {
@@ -321,4 +275,49 @@ footer p {
     margin: 0;
     font-weight: lighter;
     font-size: .75rem;
+}
+
+/* For newsletter.html */
+.hooray_container {
+    margin-top: 10px;
+}
+
+.hooray_container h2 {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--heading-font);
+    color: white;
+    z-index: 2;
+}
+
+.hooray_container h3 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--paragraph-font);
+    color: white;
+    z-index: 2;
+}
+
+.hooray_container img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
 }

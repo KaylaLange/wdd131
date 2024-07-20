@@ -1,10 +1,4 @@
 @media (min-width: 740px) {
-    /* body, html {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    } */
-
     h2 {
         font-family: var(--heading-font);
         text-align: center;
@@ -17,13 +11,6 @@
         display: flex;
         justify-content: space-between;
         margin: 10px 0 0 30px;
-    }
-
-    header h1 {
-        font-family: var(--heading-font);
-        font-size: 1.5rem;
-        padding: 0;
-        margin: 0;
     }
 
     #menu {
@@ -42,7 +29,7 @@
         display: inline-block;
         text-decoration: none;
         color: #000000;
-        padding: 0 0 0 3rem;
+        padding: .5rem 0 0 3rem;
     }
 
     #home:hover, #experiences:hover, #about_us:hover {
@@ -51,16 +38,12 @@
         font-style: italic;
     }
 
+
     /* Hero Section Styling */
     .hero_section {
         display: flex;
         justify-content: center;
         width: 100%;
-        /* margin: 0 10px 0 10px; */
-        /* margin: 0; */
-        /* padding: 0; */
-        /* width: 100%; */
-        /* height: 100%; */
     }
 
     .hero_section img {
@@ -73,7 +56,6 @@
         background-color: var(--primary-color);
         font-size: 2rem;
         padding: 2rem;
-        /* padding-bottom: 8rem; */
         margin: 0;
     }
 
@@ -81,12 +63,12 @@
         font-family: Ador Hairline ExtraLight;
     }
 
+
     /* carousel styling */
     .carousel {
         display: flex;
         justify-content: center;
         position: relative;
-        /* Add other styles like width, height, etc. */
     }
 
     .carousel_item {
@@ -126,17 +108,13 @@
     }
 
     .carousel_control_prev {
-        left: 5%; 
+        margin-left: 4%;
     }
 
     .carousel_control_next {
-        right: 5%;
+        margin-right: 4%;
     }
 
-    .carousel_control_prev_icon, .carousel_control_next_icon {
-        /* customize arrow styles */
-        font-weight: bold;
-    }
 
     /* Footer Styling */
     footer {
@@ -154,40 +132,15 @@
         font-weight: lighter;
     }
 
-/* Experiences page specific styling */
-    .experiences_container {
-        display: flex;
-        width: 100%;
+}
+
+/* Another media query to help position carousel navigation buttons */
+@media (min-width: 980px) {
+    .carousel_control_prev {
+        margin-left: 10%;
     }
 
-    .main_image {
-        flex: 1;
-        position: relative;
+    .carousel_control_next {
+        margin-right: 10%;
     }
-
-    .main_image img {
-        width: 100%;
-        height: auto;
-    }
-
-    .image_grid {
-        flex: 1;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-    }
-
-    .image_grid img {
-        width: 100%;
-        height: auto;
-    }
-
-    .grid_item {
-        cursor: pointer;
-    }
-
-    .grid_item:hover img {
-        opacity: 0.8; 
-    }
-
 }

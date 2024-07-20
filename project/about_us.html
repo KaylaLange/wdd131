@@ -6,8 +6,9 @@
     <title>About Us</title><meta name="description" content="WDD 131 - Dynamic Web Fundamentals Kayla Lange Final Project About Us Page">
     <meta name="author" content="Kayla Lange">
 
-    <script src="scripts/about_us.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/reviews.js" defer></script>
     
     <link rel="stylesheet" href="styles/about_us.css">
     <link rel="stylesheet" href="styles/about_us_large.css">
@@ -46,41 +47,44 @@
         </div>
         <div class="contact_container">
             <div class="review_form">
-                <form method="get" action="newsletter.html" class="newsletter">
+                <form method="get" class="review">
                     <fieldset>
                         <legend id="form_heading">Share Your Bite Experience</legend>
                     </fieldset>
                     <fieldset>
-                        <label for="fname" name="fname">Full Name:</label>
+                        <label for="fname">*Full Name:</label>
                         <input type="text" id="fname" name="fname" required> 
                     </fieldset>
                     <fieldset>
-                        <label for="email">Your Email:</label>
+                        <label for="email">*Your Email:</label>
                         <input type="email" id="email" name="email" autocomplete="on" placeholder="Enter Your Email Here" required>
                     </fieldset>
                     <fieldset>
-                        <label for="review" name="review">Your Bite Review:</label>
+                        <label for="review">*Your Bite Review:</label>
                         <textarea id="review" name="review" required></textarea>
                     </fieldset>
                     <fieldset>
-                        <input type="submit" value="Share Your Review" class="submitButton">
+                        <input type="submit" id="reviewButton" value="Share Your Review">
                     </fieldset>
                 </form>
+            </div>
+            <div id="popup" class="popup">
             </div>
             <section class="contact_us">
                 <h2>Get In Touch</h2>
                 <div class="contact">
                     <div class="address">
-                    <img src="images/address_icon.svg" alt="address icon">
+                    <img loading="lazy" src="images/address_icon.svg" alt="address icon">
                     <p>1234 Food Adventure Ln<br>Boulder, CO 80301</p>
                     </div>
                     <div class="phone">
-                    <img src="images/phone_icon.svg" alt="phone icon">
+                    <img loading="lazy" src="images/phone_icon.svg" alt="phone icon">
                     <p>(983)768-8399</p>
                     </div>
                     <div class="email">
-                    <img src="images/email_icon.svg" alt="email icon">
+                    <img loading="lazy" src="images/email_icon.svg" alt="email icon">
                     <p>beyondthebite@gmail.com</p>
+                    </div>
                 </div>
             </section>
         </div>

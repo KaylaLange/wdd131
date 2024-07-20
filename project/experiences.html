@@ -7,7 +7,8 @@
     <meta name="author" content="Kayla Lange">
 
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/experiences.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/experiences_images.js" defer></script>
     
     <link rel="stylesheet" href="styles/experiences.css">
     <link rel="stylesheet" href="styles/experiences_large.css">
@@ -35,49 +36,50 @@
                     <p id="largeDescription">Hike through Panama's cloud forest near Boquete on Hacienda Mamecillo's day tour. Explore the Chiriquí Highlands for 3 hours 
                         (adaptable to fitness level) with waterfalls and birdwatching. Savor a 7-course farm-to-table lunch with local ingredients before a farm tour, including
                         the greenhouse and animals. Learn about sustainable practices and wrap up with a coffee tasting, discovering the bean's journey from plant to cup. (Dietary restrictions welcome!).</p>
+                        <a id=bookNow href="https://haciendamamecillo.com">Book your adventure now!</a> <!--added this-->
                 </div>
                 <div class="image_grid">
-                    <div class="grid_item" onclick="changeImage('images/ilis_small.webp', 'Ilis in Brooklyn brings Noma\'s spirit to the US with a playful twist. Housed in a converted warehouse, the space boasts sleek Scandinavian furniture, a bustling open kitchen, and a team with a touch of The Menu theatricality. Their focus is on North American foraged ingredients, like porcini in lotus leaves or birch-baked trout. Expect the unexpected, like a playful, non-alcoholic Bloody Mary served in a clamshell. Prepare for a serious culinary adventure with a hint of whimsy.')">
-                    <img src="images/ilis_small.webp" alt="Image 1">
-                    <p>Ilis</p>
+                    <div class="grid_item" onclick="changeImage('images/ilis_small.webp', 'Ilis in Brooklyn brings Noma\'s spirit to the US with a playful twist. Housed in a converted warehouse, the space boasts sleek Scandinavian furniture, a bustling open kitchen, and a team with a touch of The Menu theatricality. Their focus is on North American foraged ingredients, like porcini in lotus leaves or birch-baked trout. Expect the unexpected, like a playful, non-alcoholic Bloody Mary served in a clamshell. Prepare for a serious culinary adventure with a hint of whimsy.', 'https://www.ilisnyc.com/')">
+                        <img src="images/ilis_small.webp" alt="Image 1">
+                        <p>Ilis</p>
                     </div>
 
-                    <div class="grid_item" onclick="changeImage('images/isfjord_radio_restaurant_small.jpg', 'Steeped in history, Isfjord Radio offers a transformative escape 90km from Svalbard\'s main town. This former radio station, once a critical communication link, now beckons as a unique wilderness retreat. Immerse yourself in the Arctic\'s silence and majesty, staying in the converted station and indulging in nightly feasts. Savor a taste of history as you relish traditional arctic delicacies like smoked seal and reindeer sausage, reminiscent of the station\'s crew who once gathered around the very same table.')">
+                    <div class="grid_item" onclick="changeImage('images/isfjord_radio_restaurant_small.jpg', 'Steeped in history, Isfjord Radio offers a transformative escape 90km from Svalbard\'s main town. This former radio station, once a critical communication link, now beckons as a unique wilderness retreat. Immerse yourself in the Arctic\'s silence and majesty, staying in the converted station and indulging in nightly feasts. Savor a taste of history as you relish traditional arctic delicacies like smoked seal and reindeer sausage, reminiscent of the station\'s crew who once gathered around the very same table.', 'https://en.visitsvalbard.com/food-and-drink/isfjord-radio-restaurant-p3672423')">
                         <img src="images/isfjord_radio_restaurant_small.jpg" alt="Image 2">
                         <p>Isfjord Radio Restaurant</p>
                     </div>
 
-                    <div class="grid_item" onclick="changeImage('images/karczma_gornicza_small.jpg', 'Descend for a Miner\'s Feast & Healthy Recharge at Karczma Górnicza in southern Poland! Journey 125 meters underground and experience a taste of miner life at Karczma Górnicza! Savor classic Polish fare like pierogi and hunter\'s stew, alongside vegetarian options and delectable desserts. Everything is prepared fresh in a unique subterranean kitchen. But the benefits go beyond the meal! Breathe deeply and feel the incredibly clean, allergen-free air, known to promote healthy sleep and relief for allergy sufferers. Imagine a night spent in this restorative microclimate, boosting your immunity (available through the Wieliczka Salt Mine Health Resort\'s Healthy Sleep offer).')">
+                    <div class="grid_item" onclick="changeImage('images/karczma_gornicza_small.jpg', 'Descend for a Miner\'s Feast & Healthy Recharge at Karczma Górnicza in southern Poland! Journey 125 meters underground and experience a taste of miner life at Karczma Górnicza! Savor classic Polish fare like pierogi and hunter\'s stew, alongside vegetarian options and delectable desserts. Everything is prepared fresh in a unique subterranean kitchen. But the benefits go beyond the meal! Breathe deeply and feel the incredibly clean, allergen-free air, known to promote healthy sleep and relief for allergy sufferers. Imagine a night spent in this restorative microclimate, boosting your immunity (available through the Wieliczka Salt Mine Health Resort\'s Healthy Sleep offer).', 'https://www.wieliczka-saltmine.com/individual-tourist/accommodation-and-meals')">
                         <img src="images/karczma_gornicza_small.jpg" alt="Image 3">
                         <p>Karczma Gornicza</p>
                     </div>
 
-                    <div class="grid_item" onclick="changeImage('images/muriels_small.jpg', 'Experience the ghosts of New Orleans\' past at Muriel\'s, a historic restaurant in the heart of the French Quarter. Savor classic Creole fare like seafood gumbo and andouille-crusted redfish in a candlelit atmosphere. Embrace the playful hauntings rumored to reside within these walls – a table is even set for resident spirit Pierre Antoine Lepardi Jourdan! Enjoy a spirited meal (pun intended) at Muriel\'s, where history and hospitality collide.')">
+                    <div class="grid_item" onclick="changeImage('images/muriels_small.jpg', 'Experience the ghosts of New Orleans\' past at Muriel\'s, a historic restaurant in the heart of the French Quarter. Savor classic Creole fare like seafood gumbo and andouille-crusted redfish in a candlelit atmosphere. Embrace the playful hauntings rumored to reside within these walls – a table is even set for resident spirit Pierre Antoine Lepardi Jourdan! Enjoy a spirited meal (pun intended) at Muriel\'s, where history and hospitality collide.', 'https://muriels.com/')">
                         <img src="images/muriels_small.jpg" alt="Image 4">
                         <p>Muriel's Jackson Square</p>
                     </div>
 
-                    <div class="grid_item" onclick="changeImage('images/ngorongoro_crater_lodge_small.jpg', 'Ngorongoro Serena Safari Lodge\'s Main Restaurant offers stunning crater views and delicious local & international cuisine. Stone architecture, a fireplace, and cave paintings create an elegant yet relaxed ambiance. Breakfast & lunch buffets feature international choices, while dinner menus include salad, soup, entree & dessert. Vegetarian options & locally sourced ingredients are a plus.')">
+                    <div class="grid_item" onclick="changeImage('images/ngorongoro_crater_lodge_small.jpg', 'Ngorongoro Serena Crater Lodge\'s Main Restaurant offers stunning crater views and delicious local & international cuisine. Stone architecture, a fireplace, and cave paintings create an elegant yet relaxed ambiance. Breakfast & lunch buffets feature international choices, while dinner menus include salad, soup, entree & dessert. Vegetarian options & locally sourced ingredients are a plus.', 'https://www.serenahotels.com/ngorongoro/dining')">
                         <img src="images/ngorongoro_crater_lodge_small.jpg" alt="Image 5">
                         <p>Ngorongoro Crater Lodge</p>
                     </div>
 
-                    <div class="grid_item" onclick="changeImage('images/turner_farm_small.jpg', 'Immerse yourself in the heart of a Maine island harvest with a celebratory feast at Turner Farm! This cherished summer tradition features a multi-course family-style meal showcasing the freshest seasonal produce, local meats, and delectable desserts. Whether you arrive by ferry on Thursdays or are already on the island for Fridays, Turner Farm promises an unforgettable evening celebrating the island\'s beauty and the season\'s harvest. Dietary restrictions are welcome.')">
+                    <div class="grid_item" onclick="changeImage('images/turner_farm_small.jpg', 'Immerse yourself in the heart of a Maine island harvest with a celebratory feast at Turner Farm! This cherished summer tradition features a multi-course family-style meal showcasing the freshest seasonal produce, local meats, and delectable desserts. Whether you arrive by ferry on Thursdays or are already on the island for Fridays, Turner Farm promises an unforgettable evening celebrating the island\'s beauty and the season\'s harvest. Dietary restrictions are welcome.', 'https://www.turner-farm.com/barn-suppers')">
                         <img src="images/turner_farm_small.jpg" alt="Image 6">
                         <p>Turner Farm Barn Supper</p>
                     </div>
 
-                    <div class="grid_item" onclick="changeImage('images/undersea_small.jpg', 'Ditch the starlight dinner, dive 19ft deeper for an unforgettable experience! Hurawalhi Maldives, an adults-only island resort, houses 5.8, the world\'s largest all-glass underwater restaurant. Imagine a 7-course seafood extravaganza on the Lhaviyani Atoll reef, surrounded by turtles, rays, and a dazzling array of fish. This reverse aquarium is perfect for an intimate date or celebration (seating only 16).')">
+                    <div class="grid_item" onclick="changeImage('images/undersea_small.jpg', 'Ditch the starlight dinner, dive 19ft deeper for an unforgettable experience! Hurawalhi Maldives, an adults-only island resort, houses 5.8, the world\'s largest all-glass underwater restaurant. Imagine a 7-course seafood extravaganza on the Lhaviyani Atoll reef, surrounded by turtles, rays, and a dazzling array of fish. This reverse aquarium is perfect for an intimate date or celebration (seating only 16).', 'https://www.hurawalhi.com/dining/undersea-restaurant/')">
                         <img src="images/undersea_small.jpg" alt="Image 7">
                         <p>5.8 Undersea Restaurant</p>
                     </div>
 
-                    <div class="grid_item" onclick="changeImage('images/el_diablo_restaurant_small.jpg', 'In Lanzarote\'s Timanfaya National Park, El Diablo (The Devil) restaurant lives up to its name. Built in 1974 amidst a volcanic landscape of Montañas del Fuego (Fire Mountains), it harnesses the park\'s geothermal heat to grill food over fiery vents. This open-air eatery serves up meats, seafood, and local specialties like arrugadas (wrinkled potatoes) and a Lanzarote Volcano dessert. Easily accessible, El Diablo offers a unique dining experience where fiery cuisine meets surreal volcanic scenery. Don\'t miss the chance to explore the park further after your meal. Hike the Tremesana Trail or drive the scenic Route of the Volcanoes.')">
+                    <div class="grid_item" onclick="changeImage('images/el_diablo_restaurant_small.jpg', 'In Lanzarote\'s Timanfaya National Park, El Diablo (The Devil) restaurant lives up to its name. Built in 1974 amidst a volcanic landscape of Montañas del Fuego (Fire Mountains), it harnesses the park\'s geothermal heat to grill food over fiery vents. This open-air eatery serves up meats, seafood, and local specialties like arrugadas (wrinkled potatoes) and a Lanzarote Volcano dessert. Easily accessible, El Diablo offers a unique dining experience where fiery cuisine meets surreal volcanic scenery. Don\'t miss the chance to explore the park further after your meal. Hike the Tremesana Trail or drive the scenic Route of the Volcanoes.', 'https://cactlanzarote.com/en/menus/el-diablo-restaurant/')">
                         <img src="images/el_diablo_restaurant_small.jpg" alt="Image 8">
                         <p>El Diablo Restaurant</p>
                     </div>
 
-                    <div class="grid_item" onclick="changeImage('images/hacienda_mamecillo_small.jpg', 'Hike through Panama\'s cloud forest near Boquete on Hacienda Mamecillo\'s day tour. Explore the Chiriquí Highlands for 3 hours (adaptable to fitness level) with waterfalls and birdwatching. Savor a 7-course farm-to-table lunch with local ingredients before a farm tour, including the greenhouse and animals. Learn about sustainable practices and wrap up with a coffee tasting, discovering the bean\'s journey from plant to cup. (Dietary restrictions welcome!).')">
+                    <div class="grid_item" onclick="changeImage('images/hacienda_mamecillo_small.jpg', 'Hike through Panama\'s cloud forest near Boquete on Hacienda Mamecillo\'s day tour. Explore the Chiriquí Highlands for 3 hours (adaptable to fitness level) with waterfalls and birdwatching. Savor a 7-course farm-to-table lunch with local ingredients before a farm tour, including the greenhouse and animals. Learn about sustainable practices and wrap up with a coffee tasting, discovering the bean\'s journey from plant to cup. (Dietary restrictions welcome!).', 'https://haciendamamecillo.com')">
                         <img src="images/hacienda_mamecillo_small.jpg" alt="Image 9">
                         <p>Hacienda Mamecillo</p>
                     </div>
@@ -91,15 +93,14 @@
                     <legend id="form_heading">Beyond Your Plate: Join Our Monthly Newsletter</legend>
                 </fieldset>
                 <fieldset>
-                    <label for="email">Your Email</label>
-                    <input type="email" id="eamil" name="email" placeholder="Enter Your Email Here" required>
+                    <label for="email">*Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email Here" required>
                 </fieldset>
 
                 <fieldset>
                     <input type="submit" value="Join the Bite" class="submitButton">
                 </fieldset>
             </form>
-            <!-- <div class="cover"></div> -->
         </div>
     </main>
     <footer>
