@@ -234,7 +234,6 @@ label {
     border-radius: 2px;
     padding-top: .75rem;
     padding-bottom: .75rem;
-    color: var(--nav-hover-link-color);
     width: 100%;
     max-width: 400px;
 }
